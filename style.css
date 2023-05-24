@@ -35,6 +35,7 @@ body {
 
 .header__inner {
   display: flex;
+  justify-content: start;
   gap: 80px;
 }
 
@@ -847,4 +848,141 @@ body {
   color: rgb(86, 40, 40);
   font-size: 50px;
   margin-left: 50px;
+}
+
+@media (max-width: 1120px) {
+  .header {
+    margin: 0 auto;
+    padding: 40px;
+  }
+  .header__inner {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .header .btn {
+    display: none;
+  }
+  .section1 {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .icon__button,
+  .star__img {
+    justify-content: center;
+  }
+  .section3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .section__3 {
+    flex-direction: column-reverse;
+  }
+  .footer {
+    margin: 0 auto;
+    padding: 40px;
+  }
+  .footer__middle {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+  }
+}
+
+@media (max-width: 790px) {
+  .header {
+    margin: 0 auto;
+    padding: 40px;
+  }
+  .header__inner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  .header .btn {
+    display: flex;
+  }
+  .header__section {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .border__content {
+    flex-wrap: wrap-reverse;
+  }
+  .border__content .border__section:not(:last-child) {
+    border: none;
+  }
+  .img__content img {
+    width: 450px;
+    height: 100%;
+  }
+  .footer__menu .footer__menu-list:not(:last-child) {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .page3__section3 {
+    margin-bottom: 0;
+  }
+  .first__section {
+    padding-top: 0;
+  }
+  .navigation a,
+  .btn a {
+    font-size: 10px;
+  }
+  .navigation ul {
+    gap: 10px;
+  }
+  .border__section {
+    padding: 18px 0;
+    max-width: 200px;
+  }
+  .border__section h2 {
+    font-size: 25px;
+  }
+  .border__section p {
+    font-size: 18px;
+  }
+  .main__title,
+  .main__title-text {
+    font-size: 35px;
+  }
+  .paragraph,
+  .main__paragraph {
+    font-size: 15px;
+  }
+  .icon__button {
+    gap: 3px;
+  }
+  .img__btn {
+    margin-right: 2px;
+  }
+  .right__content img {
+    width: 360px;
+    height: 100%;
+  }
+  .img__content img {
+    width: 360px;
+    height: 100%;
+  }
+  .absolute,
+  .absolute2,
+  .absolute3 {
+    display: none;
+  }
+  .footer__logo {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
 }
