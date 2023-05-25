@@ -901,6 +901,18 @@ body {
   .main__title-text {
     text-align: center;
   }
+  .contact__borders {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .inner_absolute {
+    display: none;
+  }
+  .section3__inner {
+    align-items: center;
+    padding: 40px 100px;
+  }
 }
 
 @media (max-width: 790px) {
@@ -939,18 +951,24 @@ body {
   }
   .slider__title h1,
   .main__title-text,
-  .page2-section h1 {
+  .page2-section h1,
+  .section3__inner h1 {
     font-size: 28px;
   }
   .three__title h2 {
     font-size: 20px;
   }
   .three__title p,
-  .page2-section p {
+  .page2-section p,
+  .section3__inner p {
     font-size: 15px;
   }
   .page2-section {
     text-align: center;
+  }
+  .section3__inner,
+  .section3__inner p {
+    width: 100%;
   }
 }
 
@@ -984,19 +1002,27 @@ body {
   .border__section h2 {
     font-size: 25px;
   }
-  .border__section p {
+  .border__section p,
+  .open__border h2,
+  .border__inner h2,
+  .section3__inner h2 {
     font-size: 18px;
   }
   .main__title,
-  .main__title-text {
-    font-size: 35px;
+  .main__title-text,
+  .contact__header h1 {
+    font-size: 30px;
   }
   .paragraph,
-  .main__paragraph {
-    font-size: 15px;
+  .main__paragraph,
+  .contact__header p,
+  .open__border p,
+  .border__inner p,
+  .section3__inner p {
+    font-size: 13px;
   }
   .icon__button {
-    gap: 3px;
+    gap: 10px;
   }
   .img__btn {
     margin-right: 2px;
@@ -1011,7 +1037,8 @@ body {
   }
   .absolute,
   .absolute2,
-  .absolute3 {
+  .absolute3,
+  .inner_absolutee {
     display: none;
   }
   .footer__logo {
@@ -1037,5 +1064,15 @@ body {
   }
   .three__title p {
     font-size: 8px;
+  }
+  .border_img3,
+  .open__border {
+    width: 100%;
+    text-align: start;
+  }
+  .btn.btn4,
+  .btn.btn3,
+  .btn.btn2 {
+    padding: 10px 10px
   }
 }
